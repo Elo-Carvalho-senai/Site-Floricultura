@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(224, 255, 214);
+    font-family: cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}

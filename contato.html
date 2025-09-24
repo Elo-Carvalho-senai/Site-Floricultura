@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css" />
+    <title>Contato</title>
+</head>
+<body>
+
+    <nav class="nav-container">
+        <ul>
+          <li><a href="#">Home</a></li> 
+          <li><a href="nos.html">Sobre</a></li>
+        </a>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="centro">Entre em contato</h1>
+
+   <div class="principal">
+
+      <div class="card">        
+        <p class="contato">Telefone de contato</p>
+        <img src="imagem1.png" alt="Telefone de contato" class="model" />
+        <div class="details">
+          <p>4002-8922</p>
+        </div>
+      </div>
+
+
+      <div class="card">        
+        <p class="contato">Endereço de e-mail</p>
+        <img src="imagem2.png" alt="Endereço de e-mail" class="model" />
+        <div class="details">
+          <p>cantinho.verde@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="card">        
+        <p class="contato">Endereço físico</p>
+        <img src="imagem3.png" alt="Endereço físico" class="model" />
+        <div class="details">
+          <p>Avenida green, Bairro jardim verde, Número 1000 - Osvaldo Cruz - SP</p>
+        </div>
+      </div>
+
+      <div class="card">        
+        <p class="contato">Horário de funcionamento</p>
+        <img src="imagem4.png" alt="Horário de funcionamento" class="model" />
+        <div class="details">
+          <p>9:00 - 18:00</p>
+        </div>
+      </div>
+
+
+
+    </div>
+    
+    <h1 class="centro">Formulário de Contato</h1>
+
+    <h3>Nome Completo:</h3>
+<form action="envio.php" method="post">
+    <input type="text" name="nome" id="nome" placeholder="Seu nome">
+
+    <h3>Email:</h3>
+    <input type="email" name="email" id="email" placeholder="Seu e-mail">
+ 
+    <h3>Assunto:</h3>
+    <input type="text" name="assunto" id="assunto" placeholder="Seu assunto">
+ 
+    <h3>Telefone:</h3>
+    <input type="number" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX">
+ 
+    <br><label for="w3review">Mensagem:</label><br>
+    <textarea name="descricao" id="descricao" rows="4" cols="50" placeholder="Escreva sua mensagem aqui..."> 
+    </textarea>
+    <button type= "submit">Enviar</button>
+
+</form> <br>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Jersey+10&family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Send+Flowers&family=Signika:wght@300..700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e1f1e9;
+  background-image: url("fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px 750px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #266041;
+  box-sizing: border-box;
+  justify-content: space-between; /* This is the key line to add */
+}
+
+nav {
+  flex: 1; /* nav ocupa todo o espaço restante */
+}
+
+nav ul {
+  /* This is what spreads out the links */
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* ul ocupa todo o nav */
+}
+
+nav ul li {
+  display: inline-block; /* garante que o li fique em linha */
+  justify-content: space-around;
+}
+
+nav ul li a {
+  font-size: 25px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+nav ul li a:hover {
+  transform: scale(1.2);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around; /* Centraliza o card na horizontal */
+  align-items: center; /* Centraliza o card na vertical */
+  height: 50vh; /* Define a altura do container */
+  margin-top: 5px;
+  padding: auto;
+}
+
+.logo img {
+  width: 75px;
+  height: auto;
+  margin: 0;
+  margin-top: 0%;
+}
+
+.box {
+  width: 250px;
+  height: 400px;
+  background-color: rgb(103, 127, 104);
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px;
+  border: 5px solid #3a4e3d;
+}
+
+/* imagens quadradas e consistentes dentro de .box */
+.box img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.details {
+  padding: 10px;
+  text-align: center;
+  color: #051805;
+  flex: 1; /* ocupa o espaço restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* separa descrição e preço */
+}
+
+.details p {
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.details h3 {
+  font-family: "Cursive", sans-serif;
+  font-size: 15px;
+  color: darkred;
+  margin: 5px 0;
+  margin-top: auto; /* empurra o preço para o fim */
+  text-align: center;
+}
+.details h2 {
+  font-family: "Cursive", sans-serif;
+  font-size: 30px;
+  color: rgb(36, 93, 51);
+  margin: 0;
+}
+
+.nome {
+  font-family: "Cursive", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #32323e;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.box:hover {
+  background-color: #1a3d18;
+  transform: scale(1.02);
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.box:hover .nome {
+  color: #000000;
+  transition: all ease 0.5s;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container2 ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.container2 li {
+  list-style: none;
+  flex: 0 0 auto;
+}
+
+.container2 {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth; /* deslize suave */
+  gap: 20px;
+  padding: 20px 0;
+  position: relative;
+  overflow: scroll;
+  scrollbar-width: none;
+  margin-top: 0;
+}
+
+.box img {
+  width: 70%;
+  max-width: 200px; /* nunca passa de 200 px */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.loja {
+  justify-items: center;
+  color: rgb(0, 0, 0);
+  font-family: "Cursive", sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  margin-top: 160px;
+}
+
+.loja h1 {
+  text-align: center;
+  font-family: "Send Flowers", sans-serif;
+  font-size: 80px;
+  color: #266041;
+  margin: 20px;
+}
+
+.loja h2 {
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  font-size: 35px;
+  color: #000000;
+}
+
+.loja h3 {
+  text-align: center;
+  font-family: "Cursive", sans-serif;
+  font-size: 20px;
+  color: #266041;
+}
+section h3 {
+  text-align: center;
+  font-family: "Cursive", sans-serif;
+  font-size: 20px;
+  color: #266041;
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Opera */
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #2b7c42;
+  margin-top: 0px;
+}
+
+.titulos {
+  color: #000000;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "cursive", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-top: 60px;
+}
+
+html,
+body {
+  overflow-x: scroll; /* Continua rolando horizontalmente */
+  scrollbar-width: none; /* Firefox */
+}
+
+.box img.model,
+.box img {
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: 10px !important;
+}
+
+.particulas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  background: radial-gradient(circle at 7% 27%, #98cc6e 0%, transparent 20%),
+    radial-gradient(circle at 95% 80%, #98cc6e 0%, transparent 20%);
+}
+
+.controls a:hover {
+  background: #266041;
+  color: white;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.controls a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #266041;
+  background: #aac9b8;
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.grama {
+  margin-bottom: 0;
+  display: flex;
+  gap: 0;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #266041;
+  color: white;
+  text-align: center;
+  padding: 1px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: "Cursive", sans-serif;
+  margin-top: 10px;
+}

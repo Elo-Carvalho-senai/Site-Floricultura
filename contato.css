@@ -1,0 +1,144 @@
+h1{
+    font-family: cursive;
+    text-align: center;
+}
+
+h3{
+    font-family: cursive;
+}
+
+nav{
+    font-family: cursive;
+}
+.card{
+    width: 200px;
+    height: 400px;
+    background: hwb(133 87% 5%);
+    border-radius: 10px;
+    box-shadow: 2px 15px 10px (0, 0, 0, .5);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.principal{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.model{
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding-bottom: 20px;
+}
+.details p{
+    font-family: cursive;
+    font-weight: bold;
+    color: #05481e;
+    text-align: center;
+    margin: 1px;
+}
+.dia{
+    color: #32323e;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family:monospace;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.card:hover{
+    background-color: #326642;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+.card:hover .dia{
+    color: #76b884;
+    transition: all ease 0.5s;
+}
+
+/* Estilo da barra de navegação com flexbox */
+.nav-container {
+    background-color: rgb(15, 118, 28) ;
+}
+
+.nav-container ul {
+    list-style-type: none; /*Remove os marcadores da lista*/
+    padding: 0;
+    margin: 0;
+    display: flex; /* ATIVA O FLEXBLOX*/
+    justify-content: space-around; /*Distribui os itens com espaço igual ao redor*/
+    font-size: 18px;
+    align-items: center; /*Centraliza os itens verticalmente*/
+}
+
+.nav-container a {
+    display: -ms-grid; /*Transforma o link em um bloco para melhor área de clique*/
+    padding: 08px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Efeito simples ao passar o mouse */
+.nav-container a:hover {
+    background-color: #05521c;
+}
+
+
+label {
+    display: block;
+    font-family: cursive;
+    line-height: 1.6;
+    background-color: rgb(242, 242, 242 ); /*Fundo da página*/
+    color:rgb(14, 95, 26) ; /*Cor padrão do texto*/
+    font-size: 15px;
+    align-items:center; /*Centraliza os itens verticalmente*/
+    min-width: 100vh;
+    font-weight: 600;
+}
+
+input {
+    width: 30%;
+    padding: 5px;
+    margin-bottom:auto;
+    border: 1%;
+    border-color: rgb(0, 0, 0);
+    border-radius: 05%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(11, 91, 31);
+    color: rgb(250, 250, 250);
+    border: none;
+    padding: 15px;
+    pointer-events: all;
+    border-radius: 15%;
+    font-family: cursive;
+    
+}
+
+button:hover {
+    background-color: #05521c;
+}
+
+
+::placeholder {
+    color: #05481e;
+    font-family: cursive;
+}
